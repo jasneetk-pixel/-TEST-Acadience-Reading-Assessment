@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reading Assessment</h1>
+        <form id="student-info">
+            <label>Name: <input type="text" id="student-name" required></label><br>
+            <label>Class Code: <input type="text" id="class-code" required></label><br>
+            <label>Date: <input type="date" id="date" required></label><br>
+            <button type="submit">Start</button>
+        </form>
+
+        <div id="instructions" style="display:none;">
+            <h2>Instructions</h2>
+            <p>Read the passage below. For each blank, choose the word that best fits the sentence.</p>
+            <button id="begin-passage">Begin Assessment</button>
+        </div>
+
+        <div id="passage-section" style="display:none;">
+            <div id="timer">Time Remaining: <span id="time">03:00</span></div>
+            <p id="passage">
+                The <select><option>--</option><option>dog</option><option>cat</option><option selected>teacher</option></select>
+                walked into the classroom and placed her bag on the <select><option>roof</option><option selected>desk</option><option>floor</option></select>.
+            </p>
+            <button id="submit-btn">Submit</button>
+        </div>
+
+        <div id="results" style="display:none;">
+            <h2>Results</h2>
+            <p id="score-output"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
