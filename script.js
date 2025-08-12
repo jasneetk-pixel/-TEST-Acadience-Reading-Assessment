@@ -43,7 +43,8 @@ document.getElementById('submit-btn').addEventListener('click', function() {
 
 function gradeAssessment() {
     const selects = document.querySelectorAll('#passage-section select');
-    const answers = ["teacher", "desk"];
+    // <-- UPDATE this answers array to match your passage blanks IN ORDER -->
+    const answers = ["result", "is", "game", "golf's"];
     let score = 0;
 
     selects.forEach((select, index) => {
